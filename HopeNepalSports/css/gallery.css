@@ -1,0 +1,20 @@
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+}
+.photo img {
+  cursor: pointer;
+  height: 40vh;
+  width: 30vw;
+  margin: .5rem;
+  clip: rect(10px auto);
+  vertical-align: middle;
+}
+.photo img:hover{
+  box-shadow: 10px 10px 100px #000;
+  transition: all .5s;
+}
+#photos {
+  padding-top: 6rem;
+}
