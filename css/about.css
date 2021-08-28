@@ -1,0 +1,79 @@
+.container .about-row{
+    display: grid;
+    grid-template-columns: 1.4fr 1.4fr;
+}
+.heading{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: "lato", sans-serif;
+    width: 50%;
+    margin: 6rem auto;
+    border-left: 4px solid #000;
+    padding-left: 1rem;
+}
+.description{
+    margin: 2rem auto;
+    text-align: justify;
+    font-family: Verdana, Tahoma, sans-serif;
+    line-height: 1.6rem;
+}
+#about{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+#motto{
+    background-color: cadetblue;
+    height: 100vh;
+    width: 100%;
+}
+.motto-container h1{
+    display: grid;
+    place-items: center;
+    vertical-align: middle;
+    height: 100vh;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Bona Nova", monospace;
+}
+#committee{
+    background-color: darkgrey;
+}
+.all-members{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    padding: 4rem;
+}
+.member{
+    padding: .5rem;
+    border-left: #f0f033 5px solid;
+    transition: .25s ease-in-out;
+    background: #fff;
+    height: 100px;
+    border-radius: 1px;
+}.member *{
+    text-transform: capitalize;
+    margin: 1rem;
+    font-family: "Montserrat", Sans-serif;
+}
+.member:hover{
+    border-left: #000 5px solid;
+    cursor: pointer;    
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.member .name{
+    font-weight: bold;
+    font-family: inherit;
+    font-family: "Montserrat", Sans-serif;
+}
+.title h2{
+    padding: 1rem;
+    width: fit-content;
+    margin: auto;
+    border-bottom: #000 5px solid;
+}
+.member .position{
+    font-size: smaller;
+    font-weight: 100;
+}

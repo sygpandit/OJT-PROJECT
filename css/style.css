@@ -1,0 +1,169 @@
+.image-container img {
+  min-width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+  z-index: -9999;
+  object-fit: cover;
+}
+.header{
+  position: fixed!important;
+  width: 100%;
+  top: 0;
+}
+.slider-inner{
+  position: relative;
+  top: 0;
+}
+.image-container {
+  object-fit: cover;
+  background-color: #bbbbbb00;
+}
+.car-1 {
+  text-align: left;
+  background-image: linear-gradient(to bottom, #0000003f, #000000af);
+  position: relative;
+  height: 100vh;
+}
+.car-1 .text-container {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  background: linear-gradient(to right, #00000054, #05050046);
+  padding: 1rem;
+  padding-bottom: 2rem;
+  width: 40%;
+  border-radius: 10px;
+  height: max-content;
+}
+.car-1 .bi {
+  position: absolute;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+.bi.bi-chevron-right {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+}
+.bi.bi-chevron-left {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+}
+.car-1 .bi:hover {
+  color: #f0f033;
+}
+.bi-chevron-left:hover {
+  left: 1.2rem;
+}
+.bi-chevron-right:hover {
+  right: 1.2rem;
+}
+.readmore {
+  color: #f0f033;
+  padding: 0.5rem;
+  margin: 1rem;
+  border: 1px solid #f0f033;
+}
+.readmore:hover {
+  background-color: #f0f033;
+  color: #000;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+.text-head {
+  transition: ease-in-out 0.5s;
+  padding: 1rem;
+}
+.text-body {
+  transition: ease-in-out 0.5s;
+  padding: 1rem;
+}
+#fixtures{
+  background-color: darkgray;
+  padding-bottom: 4rem;
+}
+.fixtures-title{
+  text-align: center;
+  padding: 1rem;
+}
+.fixtures-grid{
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  padding: 1rem;
+  gap: 0;
+}
+.all-fixtures{
+  border-collapse: collapse;
+}
+.match-time td{
+  background-color: #000;
+  color: #fff;
+  padding: .5rem;
+  width: 10%;
+  height: 1rem;
+  text-align: center;
+}
+.match td{
+  text-align: center;
+  padding: .5rem;
+  text-transform: uppercase;
+  height: 1.5rem;
+  background: #0000003f;
+}
+.fixture-image img{
+  width: 300px;
+}
+.fixture-image .team{
+  position: relative;
+}
+.fixture-image{
+  background: url(../img/match-bg.webp);
+  background-position: center;
+  height: 100%;
+}
+.team.main{
+  top: 8rem;
+  right: -15rem;
+}
+.team.sec{
+  top: 8rem;
+  left: 4rem;
+  max-width: 200px;
+}
+.seemoreplayers a{
+  background-color: #f0f033;
+  color: #000;
+  padding: .5rem;
+  width: max-content;
+  height: max-content;
+}
+.title{
+  display: grid;grid-template-columns: 1fr 1fr;
+}
+.seemoreplayers{
+  width: max-content;
+  height: max-content;
+  margin: 1.8rem auto;
+  line-height: 40px;
+}
+@media only screen and (max-width: 875px) {
+  .car-1 .text-container {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 744px) {
+  .car-1 .text-container {
+    width: 80%;
+    left: 8%;
+    bottom: 0;
+    margin: auto;
+  }
+}
